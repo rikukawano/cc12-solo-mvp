@@ -1,6 +1,12 @@
 <template>
   <div>
-    <Navbar />
+    <Navbar v-if="user.loggedIn" />
+    <h2 v-if="!user.loggedIn">
+      <router-link to="login">👉Login</router-link>
+    </h2>
+    <h2 v-if="!user.loggedIn">
+      <router-link to="register">👉Register</router-link>
+    </h2>
     <router-view></router-view>
   </div>
 </template>

@@ -106,6 +106,7 @@ export default {
             .doc(data.user.uid)
             .set({
               name: this.form.name,
+              collection: [],
             });
 
           data.user
