@@ -1,21 +1,27 @@
 # 🌱 Solo MVP
 ## A Code Chrysalis Schedule App
 
-##### This was created during my time as a student at Code Chrysalis.
+This is app was designed and developed for students at Code Chrysalis hustling away at their immersive course.
 
-**Check out the app [here!](https://cc12-solo-mvp.herokuapp.com/)**
+It has a dynamic daily schedule that will keep you on track with reminders! So no more late classes.
 
-💡*Run on mobile for a better experience!*
+
+
+###### This was created during my time as a student at Code Chrysalis.
+
+**Check out the app [here!](https://cc12-solo-mvp.herokuapp.com/)**    *Run on mobile for a better experience!*
+
+
 
 
 ## 🌏 App Navigation
 These are the routes that the user has access too:
 
-🥚 Dashboard
+🥚 **Dashboard** - This is where the eggs will arrive and hatch into cats.
 
-🐱 Collection
+🐱 **Collection** - This is where the user can view their current collection.
 
-🚀 Schedule
+🚀 **Schedule** - This is where the user can check their daily schedule.
 
 
 
