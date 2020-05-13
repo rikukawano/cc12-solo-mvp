@@ -1,24 +1,39 @@
-# first-project
+# 🌱 Solo MVP
+## A Code Chrysalis Schedule App
 
-## Project setup
+##### This was created during my time as a student at Code Chrysalis.
+
+**Check out the app [here!](https://cc12-solo-mvp.herokuapp.com/)**
+
+💡*Run on mobile for a better experience!*
+
+
+## 🌏 App Navigation
+These are the routes that the user has access too:
+
+🥚 Dashboard
+
+🐱 Collection
+
+🚀 Schedule
+
+
+
+
+## 🚀 Project setup
+Before anything, let's install all the dependencies I used for this project!
 ```
 yarn install
 ```
-
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
-
-### Compiles and minifies for production
+Then compile and minify for local deployment.
 ```
 yarn build
 ```
-
-### Lints and fixes files
+Now it's ready to be deployed locally!
 ```
-yarn lint
+yarn server
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+
+
+Made with 💚 by Riku
