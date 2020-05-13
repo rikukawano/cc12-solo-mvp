@@ -8,7 +8,9 @@
         <b-col md="6">
           <b-card-body>
             <b-card-text>{{ event.name }}</b-card-text>
-            <b-card-text>{{ event.startTime }} - {{ event.endTime }}</b-card-text>
+            <b-card-text
+              >{{ event.startTime }} - {{ event.endTime }}</b-card-text
+            >
           </b-card-body>
         </b-col>
       </b-row>
@@ -17,25 +19,9 @@
 </template>
 
 <script>
-// import { mapState } from "vuex";
-
-// const audio = new Audio(require("../assets/alarm.mp3"));
-
 export default {
-  // computed: {
-  //   ...mapState(["now"]),
-  //   isTime: function() {
-  //     if (this.now > "09:00:00") {
-  //       audio.play();
-  //       console.log("Alarm!");
-  //       return true;
-  //     } else {
-  //       return false;
-  //     }
-  //   }
-  // },
   name: "Event",
-  props: ["event"]
+  props: ["event"],
 };
 </script>
 

@@ -24,7 +24,8 @@
                 class="nav-link"
                 data-toggle="collapse"
                 data-target="#navbarSupportedContent"
-              >🥚Dashboard</router-link>
+                >🥚Dashboard</router-link
+              >
             </li>
             <li class="nav-item">
               <router-link
@@ -32,7 +33,8 @@
                 class="nav-link"
                 data-toggle="collapse"
                 data-target="#navbarSupportedContent"
-              >🐱Collection</router-link>
+                >🐱Collection</router-link
+              >
             </li>
             <li class="nav-item">
               <router-link
@@ -40,7 +42,8 @@
                 class="nav-link"
                 data-toggle="collapse"
                 data-target="#navbarSupportedContent"
-              >🚀Schedule</router-link>
+                >🚀Schedule</router-link
+              >
             </li>
             <li class="nav-item">
               <a class="nav-link" @click.prevent="signOut">👋Sign out</a>
@@ -53,7 +56,8 @@
                 class="nav-link"
                 data-toggle="collapse"
                 data-target="#navbarSupportedContent"
-              >Login</router-link>
+                >Login</router-link
+              >
             </li>
             <li class="nav-item">
               <router-link
@@ -61,7 +65,8 @@
                 class="nav-link"
                 data-toggle="collapse"
                 data-target="#navbarSupportedContent"
-              >Register</router-link>
+                >Register</router-link
+              >
             </li>
           </template>
         </ul>
@@ -82,9 +87,9 @@ export default {
   computed: {
     ...mapGetters({
       // map `this.user` to `this.$store.getters.user`
-      user: "user"
+      user: "user",
     }),
-    ...mapState(["now"])
+    ...mapState(["now"]),
   },
   methods: {
     signOut() {
@@ -93,10 +98,10 @@ export default {
         .signOut()
         .then(() => {
           this.$router.replace({
-            name: "home"
+            name: "home",
           });
         });
-    }
-  }
+    },
+  },
 };
 </script>

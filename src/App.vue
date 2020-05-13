@@ -1,21 +1,6 @@
 <template>
   <div>
     <Navbar />
-    <div v-if="isTime">
-      <div class="modal fade" id="addon_modal" tabindex="-1" role="dialog">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h4 class="modal-title text-center">Modal title</h4>
-            </div>
-            <div class="modal-body">
-              <p>List of add-ons here</p>
-            </div>
-            <div class="modal-footer">//buttons to add add-ons to cart and to dismiss modal here</div>
-          </div>
-        </div>
-      </div>
-    </div>
     <router-view></router-view>
   </div>
 </template>
@@ -23,24 +8,59 @@
 <script>
 import Navbar from "./components/Navbar";
 import { mapState } from "vuex";
+import swal from "sweetalert";
 
 export default {
   name: "App",
   components: {
-    Navbar
+    Navbar,
   },
   computed: {
-    ...mapState(["now"]),
-    isTime: function() {
-      if (this.now > "09:00:00") {
-        // audio.play();
-        console.log("Alarm!");
-        return true;
-      } else {
-        return false;
+    ...mapState(["now", "user"]),
+  },
+  watch: {
+    now() {
+      if (this.user.loggedIn) {
+        switch (this.now) {
+          case "08:50":
+            swal("Get ready for 🌞Morning Stand-up");
+            break;
+          case "09:10":
+            swal("Get ready for 👾Block 1");
+            break;
+          case "10:40":
+            swal("It's your ☕️Morning Break soon!");
+            break;
+          case "10:55":
+            swal("Get ready for 👾Block 2");
+            break;
+          case "12:25":
+            swal("It's almost 🍔Lunch Break!");
+            break;
+          case "13:25":
+            swal("Get ready for 🎤After Lunch Stand-up");
+            break;
+          case "13:40":
+            swal("Get ready for 👾Block 3");
+            break;
+          case "15:10":
+            swal("It's your ☕️Afternoon Break soon!");
+            break;
+          case "15:25":
+            swal("Get ready for 👾Block 4");
+            break;
+          case "16:55":
+            swal("Get ready for 👾Block 5");
+            break;
+          case "17:45":
+            swal("It's 🥳Closing Party in 5 mins!");
+            break;
+          default:
+            console.log("No reminders");
+        }
       }
-    }
-  }
+    },
+  },
 };
 </script>
 

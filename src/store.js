@@ -2,6 +2,7 @@ import Vue from "vue";
 import Vuex from "vuex";
 import db from "./components/firebaseInit";
 import firebase from "firebase/app";
+import moment from "moment";
 
 Vue.use(Vuex);
 
@@ -12,7 +13,7 @@ export default new Vuex.Store({
       data: null,
       collection: null,
     },
-    now: new Date().toLocaleTimeString("en-GB"),
+    now: moment(new Date()).format("HH:mm"),
   },
   getters: {
     user(state) {
@@ -46,7 +47,7 @@ export default new Vuex.Store({
         });
     },
     UPDATE_TIME(state) {
-      state.now = new Date().toLocaleTimeString("en-GB");
+      state.now = moment(new Date()).format("HH:mm");
     },
   },
   actions: {

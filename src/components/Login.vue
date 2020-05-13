@@ -8,7 +8,9 @@
             <div v-if="error" class="alert alert-danger">{{ error }}</div>
             <form action="#" @submit.prevent="submit">
               <div class="form-group row">
-                <label for="email" class="col-md-4 col-form-label text-md-right">Email</label>
+                <label for="email" class="col-md-4 col-form-label text-md-right"
+                  >Email</label
+                >
 
                 <div class="col-md-6">
                   <input
@@ -25,7 +27,11 @@
               </div>
 
               <div class="form-group row">
-                <label for="password" class="col-md-4 col-form-label text-md-right">Password</label>
+                <label
+                  for="password"
+                  class="col-md-4 col-form-label text-md-right"
+                  >Password</label
+                >
 
                 <div class="col-md-6">
                   <input
@@ -54,15 +60,16 @@
 
 <script>
 import firebase from "firebase";
+import swal from "sweetalert";
 
 export default {
   data() {
     return {
       form: {
         email: "",
-        password: ""
+        password: "",
       },
-      error: null
+      error: null,
     };
   },
   methods: {
@@ -71,12 +78,13 @@ export default {
         .auth()
         .signInWithEmailAndPassword(this.form.email, this.form.password)
         .then(() => {
+          swal("Welcome back!", "Let's get hacking 🤘", "success");
           this.$router.replace({ name: "Dashboard" });
         })
-        .catch(err => {
+        .catch((err) => {
           this.error = err.message;
         });
-    }
-  }
+    },
+  },
 };
 </script>
