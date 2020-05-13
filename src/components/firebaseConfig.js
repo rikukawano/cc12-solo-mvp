@@ -1,5 +1,7 @@
+require("dotenv").config();
+
 export default {
-  apiKey: "AIzaSyASgsVHH2pKRt5ET6yr6pPUu9AhgnGr9qA",
+  apiKey: process.env.VUE_APP_API_KEY,
   authDomain: "cc-solo-mvp.firebaseapp.com",
   databaseURL: "https://cc-solo-mvp.firebaseio.com",
   projectId: "cc-solo-mvp",
