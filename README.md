@@ -1,11 +1,11 @@
-# 🌱 Solo MVP
-## A Code Chrysalis Schedule App
+# 😸 CATch Them All
+### A schedule app with a sprinkle of cats!
 
 ###### This was created during my time as a student at Code Chrysalis.
 
-This is app was designed and developed for students at Code Chrysalis hustling away at their immersive course.
+This app was designed and developed specifically for students at Code Chrysalis hustling away at their immersive course.
 
-It has a dynamic daily schedule that will keep you on track with reminders! So no more late classes.
+**CATch Them All** has a dynamic daily scheduler that will keep you on track with reminders, so no more late classes! You'll be looking forward to every day, because a unique cat will hatch at the end of each day to celebrate your progress 🎉 At completion of the immersive course, not only will you have become a competent fullstack engineer, but *more importantly, you will have collected all 60 cats!*
 
 
 
